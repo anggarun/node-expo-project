@@ -25,7 +25,7 @@ export default function LoginScreen() {
     // }
 
     // ambil dari api
-    const url = "http://192.168.43.160:3000/login"
+    const url = "http://localhost:3000/login"
     try {
       const res = await fetch(url,{
         method: "POST",

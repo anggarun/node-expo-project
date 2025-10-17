@@ -18,7 +18,7 @@ export default function HomeScreen() {
 
   const getProduct = async (id: number) => {
     try {
-      const res = await fetch(`http://192.168.43.160:3000/product/${id}`);
+      const res = await fetch(`http://localhost:3000/product/${id}`);
       if (!res.ok) {
         throw new Error(`HTTP error! status: ${res.status}`);
       }
@@ -32,7 +32,7 @@ export default function HomeScreen() {
 
   const getUser = async (id: number) => {
     try {
-      const res = await fetch(`http://192.168.43.160:3000/user/${id}`);
+      const res = await fetch(`http://localhost:3000/user/${id}`);
       if (!res.ok) {
         throw new Error(`HTTP error! status: ${res.status}`);
       }
